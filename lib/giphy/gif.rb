@@ -63,6 +63,10 @@ module Giphy
     def image_original_url
       URI(hash.fetch('image_original_url', ''))
     end
+    
+    def downsized_medium_image
+      @downsized_medium_image ||= image(images['downsized_medium'])
+    end
 
     private
 
