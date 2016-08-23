@@ -67,6 +67,10 @@ module Giphy
     def downsized_medium_image
       @downsized_medium_image ||= image(images['downsized_medium'])
     end
+    
+    def downsized_large_image
+      @downsized_large_image ||= image(images['downsized_large'])
+    end
 
     private
 
